@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                list-style: 0;
+            }
+            body{
+                display: flex;
+                align-items: center;
+                background-color: #003;
+            }
+            
+            .wrap{
+                display: flex;
+                width: 1200px;
+                margin:auto;
+            }
+
+            .item{
+                margin: 15px;
+                width: 368px;
+                text-align: center;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                transform: translateY(0px);
+                transition: .8s;
+            }
+            
+            .item:hover{
+                transform: translateY(-25%);
+            }
+
+            .item:hover .txt::before{
+                border-left: 184px solid #FEB85D;
+                border-right: 184px solid #FEB85D;
+            }
+            
+            .item:hover .txt{
+                background-image: linear-gradient(0deg,#FB8076,#FEB85D);
+            }
+            .item img{
+                width: 100%;
+                vertical-align: center;
+            }
+
+            .item h1{
+                border-bottom: 1px solid #888;
+                padding-bottom: .3em;
+                margin-bottom: .3em;
+                font-weight: 900;
+                transition: .3s;
+            }
+            
+            .item p{
+                line-height: 1.5;
+                font-weight: 300;
+                transition: .3s;
+            }
+
+            .item .txt{
+                padding: 20px;
+                position: relative;
+            }
+
+            .item .txt::before{
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 0;
+                top: 0;
+                border-top: 50px solid transparent;
+                border-left:184px solid #fff;
+                border-right: 184px solid #fff;
+                transform: translateY(-100%);
+            }
+
+            .item:hover h1{
+                color: #fff;
+                border-bottom-color: #fff;
+            }
+
+            .item:hover p{
+                color: #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrap">
+
+            <div class="item">
+                <img src="https://picsum.photos/300/300?ramdom=10">
+                <div class="txt">
+                <h1>
+                    Kelvin1
+                </h1>
+
+                <p>
+                    Show the content1
+                </p>
+            </div>
+            </div>
+
+            <div class="item">
+                <img src="https://picsum.photos/300/300?ramdom=9">
+                <div class="txt">
+                <h1>
+                    Kelvin2
+                </h1>
+
+                <p>
+                    Show the content2
+                </p>
+            </div>
+            </div>
+
+            <div class="item">
+                <img src="https://picsum.photos/300/300?ramdom=8">
+                <div class="txt">
+                <h1>
+                    Kelvin3
+                </h1>
+
+                <p>
+                    Show the content3
+                </p>
+            </div>
+            </div>
+
+        </div>
+    </body>
+</html>

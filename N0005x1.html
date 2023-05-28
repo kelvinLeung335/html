@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style type="text/css">
+            .flex{
+                width: 800px;
+                height: 800px;
+                background-color: #ccc;
+                display:flex;
+                justify-content: center;
+                flex-direction: row;
+                /* flex-wrap: wrap; */
+            }
+
+            .item{
+                width: 700px;
+                /* height: 200px; */
+                background-color: #f99;
+                font-size: 100px;
+                margin: 20px;
+                /* text-align: center; */
+            }
+
+            .box{
+                width: 0px;
+                height: 0px;
+                border-top: 50px solid #f00;
+                border-right:  50px solid #0f0;
+                border-bottom: 50px solid #00f;
+                border-left: 50px solid #aaa;
+            }
+
+            p{
+                background-color: #ccc;
+            }
+
+            p::before{
+                content: 'kelvin';
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-color: red;
+            }
+
+            p::after{
+                content: 'kelvin';
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-color: red;
+            }
+        </style>
+    </head>
+
+    <body> 
+
+        <p>cotent</p>
+        <div class="box">
+
+        </div>
+
+        <div class="flex">
+            <div class="item">1</div>
+            <div class="item">2</div>
+        </div>
+
+    </body>
+</html>

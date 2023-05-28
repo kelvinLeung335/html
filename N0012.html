@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <style type="text/css">
+                     @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
+            *{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            html,body{
+                height: 100%;
+            }
+            body{
+                display: flex;
+                align-items: center;
+                background-image: linear-gradient(90deg,#3d5894,#08c7a5);
+            }
+            .table{
+                width: 800px;
+                margin: auto;
+            }
+            .table table{
+                width: 100%;
+                border: 3px double #666;
+                background: #fff;
+                border-radius: 10px;
+            }
+            .table thead{
+                background: #333;
+                color: #fff;
+            }
+            .table thead th:first-child
+            {
+                border-radius: 7px 0 0 0;
+            }
+            .table thead th:last-child
+            {
+                border-radius: 0 7px 0 0;
+            }
+            .table tbody a{
+                color: #aaa;
+            }
+            .table tbody tr:nth-child(even){
+                background-color: #ffa;
+            }
+            .table tfoot td:first-child
+            {
+                border-radius: 0 0  0 7px;
+            }
+
+            .table tfoot td:last-child
+            {
+                border-radius: 0 0 7px 0 ;
+            }
+
+            .table tbody tr:hover{
+                background-color: #eee;
+            }
+            .table th{
+                border:1px solid #666;
+                padding: 6px 10px;
+                font-family: 'Noto Sans TC',sans-serif;
+            }
+            .table td{
+                border:1px solid #666;
+                padding: 6px 10px;
+                font-family: 'Noto Sans TC',sans-serif;
+            }
+
+            .table caption{
+                caption-side: bottom;
+                text-align: right;
+                padding: 10px 0;
+                color: #ccc;
+            }
+
+            .table caption a{
+                color: #eee;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="table">
+            <table>
+                <caption>
+                    <a href="https://www.google.com/">Header</a>
+                </caption>
+                <thead><tr>
+                    <th scope="col">wait</th>
+                    <th scope="col">wait</th>
+                    <th scope="col">wait</th>
+                    <th scope="col">wait</th>
+                    <th scope="col">wait</th>
+                    <th scope="col">wait</th>
+                </tr></thead>
+                <tbody
+                ><tr>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                </tr>
+                <tr>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                </tr>
+                <tr>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                </tr>
+                <tr>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                    <td scope="col">wait</td>
+                </tr>
+            </tbody>
+                <tfoot>
+                    <tr>
+                        <td scope="col">wait</td>
+                        <td colspan="5">wait</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </body>
+</html>
